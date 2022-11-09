@@ -1,0 +1,51 @@
+﻿@model IEnumerable<CodeFirstDemo.Models.InvoiceDetail>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Customer.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Invoice.InvoiceNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Seller.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Customer.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Invoice.InvoiceNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Seller.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.InvoiceDetailID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.InvoiceDetailID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.InvoiceDetailID })
+        </td>
+    </tr>
+}
+
+</table>

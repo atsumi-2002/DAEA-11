@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fd9ce81d67c74fb89e616fd29384f897" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="UniversityDBModel.C__MigrationHistory" Width="1.5" PointX="8" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityDBModel.Courses" Width="1.5" PointX="8.125" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityDBModel.Customers" Width="1.5" PointX="5.25" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityDBModel.Enrollments" Width="1.5" PointX="10" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityDBModel.InvoiceDetails" Width="1.5" PointX="2.625" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityDBModel.Invoices" Width="1.5" PointX="2.5" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityDBModel.Products" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityDBModel.Sellers" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityDBModel.Students" Width="1.5" PointX="10" PointY="3.125" IsExpanded="true" />
+        <AssociationConnector Association="UniversityDBModel.FK_dbo_Enrollments_dbo_Courses_CourseID" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityDBModel.FK_dbo_InvoiceDetails_dbo_Customers_CustomerID" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityDBModel.FK_dbo_Enrollments_dbo_Students_StudentID" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityDBModel.FK_dbo_InvoiceDetails_dbo_Invoices_InvoiceID" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityDBModel.FK_dbo_InvoiceDetails_dbo_Sellers_SellerID" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityDBModel.ProductInvoices" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
